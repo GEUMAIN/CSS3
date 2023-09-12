@@ -1,0 +1,29 @@
+/* 맨 앞에 가상의 공간 */
+.box::after{
+    content: "항목을 선택해주세요.";
+}
+/* 맨 뒤에 가상의 공간 */
+.box::before{
+    content: "MENU";
+}
+/* 첫번째 글자 */
+p::first-letter {
+    font-size: 300%;
+    color: red;
+}
+p {
+    border-bottom: 1px dashed #000;
+}
+/* 첫번쩨 자식의 첫번째 글자 */
+p:first-child::first-letter{
+    color: blue;
+}
+/* 두번째 자식의 두번째 글자 */
+p:nth-child(2)::first-letter{
+    color: violet;
+}
+/* p:nth-child(3) */
+/* 마지막 자식 */
+p:last-child{
+    border: none;
+}
