@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+body{
+    font-size: 15px;
+    font-family: MOnoton;
+}
+#gnb li {
+    display: inline;
+}
+#gnb li a {
+    /* 인라인 요소를 가지고 있고 넓이값과 높이값은 블록요소처럼 가지고 있는것 */
+    display: inline-block;
+    background: #c00;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    /* 가운데 정렬 */
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    /* 마우스 갖다댔을때 바뀌는걸 0.6 걸리게 해줌 */
+    transition: all 0.6s;
+}
+#gnb li a:hover{
+    background-color: #369;
+    text-decoration: underline;
+}
