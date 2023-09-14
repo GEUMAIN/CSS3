@@ -1,0 +1,38 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    color: blueviolet;
+}
+body {
+    font: 12px;
+    font-family: 돋움;
+    margin: 10px;
+}
+#container {
+    float: left;
+    width: 530px;
+    background-color: #fdf;
+}
+.menu {
+    width: 130px;
+    float: left;
+    padding: 10px;
+}
+.content{
+    width: 350px;
+    float: right;
+    border-left: 1px solid #333;
+    padding: 10px;
+}
+/* float left나 float right를 원래대로 돌리겠다는 의미 */
+#footer{ clear : both;}
+address {
+    font-style: normal;
+    padding: 10px;
+}
